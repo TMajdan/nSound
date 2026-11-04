@@ -8,6 +8,13 @@ goes quiet.
 The app listens to **what the communicator is playing** (other people's voices),
 never to your microphone, so your own microphone does not trigger anything.
 
+## Download
+
+Grab the latest `nSound.exe` from the [Releases](../../releases) page — every tag
+triggers the GitHub Actions workflow in
+[`.github/workflows/build.yml`](.github/workflows/build.yml), which tests the
+crate and publishes the release build (static CRT, icon embedded).
+
 ## How it works
 
 Windows mixes every application's playback into a per-process audio session on
@@ -108,6 +115,13 @@ cargo run
 
 Play any sound (a YouTube video or a Windows sound) and watch the log: it should
 pause after roughly the attack delay and resume once the hold window expires.
+
+`--probe` prints the live session levels (communicator output, other apps and
+the microphone) without controlling media at all:
+
+```powershell
+nsound.exe --probe
+```
 
 ## Configuration file
 
