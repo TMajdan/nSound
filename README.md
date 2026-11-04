@@ -1,9 +1,11 @@
 # nSound
 
+Pause your music when someone talks on Discord or Microsoft Teams.
+
 Desktop app (Rust + egui) that runs in the background and pauses media playback
-(for example a YouTube tab) as soon as voice activity is detected in a
-communicator — Discord to start with — and resumes it when the conversation
-goes quiet.
+(for example a YouTube tab, Spotify, or anything you are listening to) as soon as
+somebody speaks in Discord or Microsoft Teams, and resumes it when the
+conversation goes quiet.
 
 The app listens to **what the communicator is playing** (other people's voices),
 never to your microphone, so your own microphone does not trigger anything.

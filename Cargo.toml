@@ -3,7 +3,7 @@ name = "nsound"
 version = "0.1.0"
 edition = "2021"
 authors = ["nSound Developer"]
-description = "Automatic media pausing on voice activity detection in communicators"
+description = "Pause your music when someone talks on Discord or Microsoft Teams"
 
 [dependencies]
 eframe = "0.28"
