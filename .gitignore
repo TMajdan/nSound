@@ -1,0 +1,6 @@
+/target
+**/*.rs.bk
+nsound_config.json
+*.log
+/*.exe
+.cargo/config.toml
